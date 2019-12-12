@@ -3680,6 +3680,16 @@ Callback_PlayerConnect()
 		
 		);
 		
+		expFogStartDist = getDvar("pooya_fog_startDistance");
+		expFogHalfDist = getDvar("pooya_fog_halfwayDistance");
+		expFogRed = getDvar("pooya_fog_redComponent");
+		expFogGreen = getDvar("pooya_fog_greenComponent");
+		expFogBlue = getDvar("pooya_fog_blueComponent");
+		expFogTransition = getDvar("pooya_fog_transitionSpeed");
+		
+		//setExpFog(0, 100, 1, 0, 0, 0);
+		//setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
+		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );
 	waittillframeend;

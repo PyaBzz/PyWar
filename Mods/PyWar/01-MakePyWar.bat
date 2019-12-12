@@ -1,6 +1,6 @@
 del PyWar.iwd
 
-powershell compress-archive .\maps .\PyWar.zip
+powershell compress-archive .\PyWar\* .\PyWar.zip
 
 ren PyWar.zip PyWar.iwd
 
