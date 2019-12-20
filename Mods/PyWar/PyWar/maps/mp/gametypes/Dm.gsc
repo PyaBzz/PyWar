@@ -1,5 +1,6 @@
 #include maps\mp\_utility;
 #include maps\mp\gametypes\_hud_util;
+#include maps\mp\gametypes\Py;
 
 main()
 {
@@ -26,6 +27,9 @@ onSpawnPlayer()
 	{
 		self thread AntiCamp();
 	}
+	welcome_text = getDvar("py_welcome_text");
+	replaced_welcome_text = string_replace( welcome_text, "<name>", self.name );
+	self IprintLnBold( replaced_welcome_text );
 }
 
 AntiCamp()
