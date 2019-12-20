@@ -3680,15 +3680,14 @@ Callback_PlayerConnect()
 		
 		);
 		
-		expFogStartDist = getDvar("py_fog_startDistance");
-		expFogHalfDist = getDvar("py_fog_halfwayDistance");
-		expFogRed = getDvar("py_fog_redComponent");
-		expFogGreen = getDvar("py_fog_greenComponent");
-		expFogBlue = getDvar("py_fog_blueComponent");
-		expFogTransition = getDvar("py_fog_transitionSpeed");
+		expFogStartDist = getDvarInt("py_expFogStartDist");
+		expFogHalfDist = getDvarInt("py_expFogHalfDist");
+		expFogRed = getDvarFloat("py_expFogRed");
+		expFogGreen = getDvarFloat("py_expFogGreen");
+		expFogBlue = getDvarFloat("py_expFogBlue");
+		expFogTransition = getDvarFloat("py_expFogTransition");
 		
-		//setExpFog(0, 100, 1, 0, 0, 0);
-		//setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
+		setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
 		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );

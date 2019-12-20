@@ -1,0 +1,51 @@
+
+//----------------  Colous  ----------------
+// 0=Black, 1=Red, 2=Green, 3=Yellow, 4=Blue, 5=Aqua, 6=Magenta, 7=White, 8=Grey, 9=Khaki
+
+
+// Generates a random value in the given range.
+randomintrange(1,255)
+
+// Reads a variable **AS A STRING** that was defined using a "seta" command in either a .cfg file or console
+getDvar("pooyaVar")
+
+// Reads a variable **AS AN INTEGER** that was defined using a "seta" command in either a .cfg file or console
+getDvarInt("pooyaVar")
+
+// Reads a variable **AS A DECIMAL/FLOAT** that was defined using a "seta" command in either a .cfg file or console
+getDvarFloat("pooyaVar")
+
+// This assigns "ArbitraryString" to the variable "message"
+seta myVar2 = "ArbitraryString"    //in cfg file or console:
+i = 2;
+message = getDvar("myVar"+i);
+
+// This adds a variable to the player that just connected and gives it a value.
+Callback_playerConnect()
+{
+	self.wasWelcomed = false;
+}
+
+// This notifies the level (world) with the message "a_player_spawned".
+playerX.spawnPlayer()
+{
+	level notify("a_player_spawned");
+}
+
+// This notifies code inside the playerX itself with the message "I_spawned".
+playerX.spawnPlayer()
+{
+	self notify("I_player");
+}
+
+
+// This line in a gsc file in the main() method defines "self" as the player that notifies the message.
+self waittill("a_player_spawned");
+
+
+// This adds an entity to the end of an array.
+maps\mp\_utility::add_to_array(array, ent);
+
+// Gives an array that holds all players on the server.
+players = getEntArray("player", "classname");
+
