@@ -3668,24 +3668,24 @@ Callback_PlayerConnect()
 {
 	thread notifyConnecting();
 	self setClientDvars(
-		"fx_enable", getDvar("pooya_fx_enable"),
-		"r_fullbright", getDvar("pooya_r_fullbright"),
-		"player_sustainAmmo", getDvar("pooya_player_sustainAmmo"),
-		"r_fog", getDvar("pooya_r_fog"),
-		"r_drawDecals", getDvar("pooya_r_drawDecals"),
-		"r_drawSun", getDvar("pooya_r_drawSun"),
-		"r_picmip_water", getDvar("pooya_r_picmip_water"),
-		"cg_brass", getDvar("pooya_cg_brass"),
-		"com_maxFPS", getDvar("pooya_com_maxFPS")
+		"fx_enable", getDvar("py_fx_enable"),
+		"r_fullbright", getDvar("py_r_fullbright"),
+		"player_sustainAmmo", getDvar("py_player_sustainAmmo"),
+		"r_fog", getDvar("py_r_fog"),
+		"r_drawDecals", getDvar("py_r_drawDecals"),
+		"r_drawSun", getDvar("py_r_drawSun"),
+		"r_picmip_water", getDvar("py_r_picmip_water"),
+		"cg_brass", getDvar("py_cg_brass"),
+		"com_maxFPS", getDvar("py_com_maxFPS")
 		
 		);
 		
-		expFogStartDist = getDvar("pooya_fog_startDistance");
-		expFogHalfDist = getDvar("pooya_fog_halfwayDistance");
-		expFogRed = getDvar("pooya_fog_redComponent");
-		expFogGreen = getDvar("pooya_fog_greenComponent");
-		expFogBlue = getDvar("pooya_fog_blueComponent");
-		expFogTransition = getDvar("pooya_fog_transitionSpeed");
+		expFogStartDist = getDvar("py_fog_startDistance");
+		expFogHalfDist = getDvar("py_fog_halfwayDistance");
+		expFogRed = getDvar("py_fog_redComponent");
+		expFogGreen = getDvar("py_fog_greenComponent");
+		expFogBlue = getDvar("py_fog_blueComponent");
+		expFogTransition = getDvar("py_fog_transitionSpeed");
 		
 		//setExpFog(0, 100, 1, 0, 0, 0);
 		//setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);

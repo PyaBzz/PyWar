@@ -22,7 +22,7 @@ onSpawnPlayer()
 	spawnPoints = maps\mp\gametypes\_spawnlogic::getTeamSpawnPoints( self.pers["team"] );
 	spawnPoint = maps\mp\gametypes\_spawnlogic::getSpawnpoint_DM( spawnPoints );
 	self spawn( spawnPoint.origin, spawnPoint.angles );
-	if(getDvarInt("pooya_anticamp_enabled") != 0)
+	if(getDvarInt("py_anticamp_enabled") != 0)
 	{
 		self thread AntiCamp();
 	}
@@ -33,11 +33,11 @@ AntiCamp()
 	self endon( "death" );
 	my_camp_time = 0;
 	have_i_been_warned = false;
-	camp_radius = getDvarInt("pooya_anticamp_camp_radius");
-	camp_to_warning_time = getDvarInt("pooya_anticamp_camp_to_warning_time");
-	warning_to_death_time = getDvarInt("pooya_anticamp_warning_to_death_time");
-	warning_text = getDvar("pooya_anticamp_warning_text");
-	death_text = getDvar("pooya_anticamp_death_text");
+	camp_radius = getDvarInt("py_anticamp_camp_radius");
+	camp_to_warning_time = getDvarInt("py_anticamp_camp_to_warning_time");
+	warning_to_death_time = getDvarInt("py_anticamp_warning_to_death_time");
+	warning_text = getDvar("py_anticamp_warning_text");
+	death_text = getDvar("py_anticamp_death_text");
 
 	while( 1 )
 	{
