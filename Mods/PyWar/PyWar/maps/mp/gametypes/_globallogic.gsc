@@ -3677,17 +3677,15 @@ Callback_PlayerConnect()
 		"r_picmip_water", getDvar("py_r_picmip_water"),
 		"cg_brass", getDvar("py_cg_brass"),
 		"com_maxFPS", getDvar("py_com_maxFPS")
-		
 		);
 		
-		expFogStartDist = getDvarInt("py_expFogStartDist");
-		expFogHalfDist = getDvarInt("py_expFogHalfDist");
-		expFogRed = getDvarFloat("py_expFogRed");
-		expFogGreen = getDvarFloat("py_expFogGreen");
-		expFogBlue = getDvarFloat("py_expFogBlue");
-		expFogTransition = getDvarFloat("py_expFogTransition");
-		
-		setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
+	expFogStartDist = getDvarInt("py_expFogStartDist");
+	expFogHalfDist = getDvarInt("py_expFogHalfDist");
+	expFogRed = getDvarFloat("py_expFogRed");
+	expFogGreen = getDvarFloat("py_expFogGreen");
+	expFogBlue = getDvarFloat("py_expFogBlue");
+	expFogTransition = getDvarFloat("py_expFogTransition");
+	setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
 		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );
