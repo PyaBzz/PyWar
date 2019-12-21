@@ -3686,14 +3686,6 @@ Callback_PlayerConnect()
 	expFogBlue = getDvarFloat("py_expFogBlue");
 	expFogTransition = getDvarFloat("py_expFogTransition");
 	setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
-	
-	if(getDvarInt("py_highJumpEnabled") != 0)
-	{
-		self setClientDvars(
-			"bg_fallDamageMinHeight", 999999,
-			"jump_height", getDvarInt("py_highJumpHeight")
-			);
-	}
 		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );
