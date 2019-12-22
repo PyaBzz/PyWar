@@ -49,3 +49,5 @@ maps\mp\_utility::add_to_array(array, ent);
 // Gives an array that holds all players on the server.
 players = getEntArray("player", "classname");
 
+// Logs to the log file which is by default games_mp.log
+logPrint("\n>>>>>     " + self.name + " joined" + "\n");
