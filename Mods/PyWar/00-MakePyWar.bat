@@ -1,4 +1,4 @@
-del PyWar.iwd
+del 01-PyWar.iwd
 
 powershell compress-archive .\PyWar\* .\PyWar.zip
 

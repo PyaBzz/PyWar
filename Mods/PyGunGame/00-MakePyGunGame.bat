@@ -1,4 +1,4 @@
-del PyGunGame.iwd
+del 01-PyGunGame.iwd
 
 powershell compress-archive .\PyGunGame\* .\PyGunGame.zip
 
