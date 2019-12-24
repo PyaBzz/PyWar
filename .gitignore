@@ -1,4 +1,34 @@
-Players/Profiles/*/mods
+#================  We ignore everything except files of interest  =====================
+**/*.*
+
+!.gitignore
+!web.config
+
+#====================================  Mods  ==========================================
+!Mods/*.txt
+
+!Mods/PyGunGame/PyGunGame/**/*
+!Mods/PyGunGame/*.bat
+!Mods/PyGunGame/*.cfg
+!Mods/PyGunGame/mod.ff
+
+!Mods/PyWar/PyWar/**/*
+!Mods/PyWar/*.bat
+!Mods/PyWar/*.cfg
+!Mods/PyWar/mod.ff
 
 
-Mods/PyWar/PyWar.iwd
+#===================================  Players  ========================================
+!Players/Profiles/active.txt
+!Players/Profiles/PyOnline/config_mp.cfg
+!Players/Profiles/PyOnline/mpdata_backup
+!Players/Profiles/PyPrivate/config_mp.cfg
+!Players/Profiles/PyPrivate/mpdata_backup
+
+
+#==================================  Registry  ========================================
+!Registry
+
+
+#=================================  ShortCuts  ========================================
+!*.bat
