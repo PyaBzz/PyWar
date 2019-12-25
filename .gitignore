@@ -1,5 +1,5 @@
 #================  We ignore everything except files of interest  =====================
-**/*
+**/*.*
 
 !.gitignore
 !web.config
@@ -19,7 +19,9 @@
 
 
 #===================================  Players  ========================================
+Players/**/mpdata
 !Players/Profiles/active.txt
+!Players/Profiles/LvL55key.txt
 
 !Players/Profiles/PyOnline/config_mp.cfg
 !Players/Profiles/PyOnline/mpdata_backup
