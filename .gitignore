@@ -21,15 +21,10 @@
 #===================================  Players  ========================================
 Players/**/mpdata
 !Players/Profiles/active.txt
-!Players/Profiles/LvL55key.txt
 
 !Players/Profiles/PyOnline/config_mp.cfg
-!Players/Profiles/PyOnline/mpdata_backup
 
 !Players/Profiles/PyPrivate/config_mp.cfg
-!Players/Profiles/PyPrivate/mpdata_backup
-
-!CoD4i
 
 
 #==================================  Registry  ========================================
