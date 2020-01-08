@@ -1,9 +1,7 @@
 #include py\PyUtils;
 
-pyCallback_PlayerConnect()
+pyOnStartGameType()
 {
-    self pySetClientVars();
-		
 	expFogStartDist = getDvarInt("py_expFogStartDist");
 	expFogHalfDist = getDvarInt("py_expFogHalfDist");
 	expFogRed = getDvarFloat("py_expFogRed");
@@ -11,7 +9,26 @@ pyCallback_PlayerConnect()
 	expFogBlue = getDvarFloat("py_expFogBlue");
 	expFogTransition = getDvarFloat("py_expFogTransition");
 	setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
+}
 
+pyCallback_PlayerConnect()
+{
+    self pySetClientDvars();
+}
+
+pySetClientDvars()
+{
+	self setClientDvars(
+		"fx_enable", getDvar("py_fx_enable"),
+		"r_fullbright", getDvar("py_r_fullbright"),
+		"player_sustainAmmo", getDvar("py_player_sustainAmmo"),
+		"r_fog", getDvar("py_r_fog"),
+		"r_drawDecals", getDvar("py_r_drawDecals"),
+		"r_drawSun", getDvar("py_r_drawSun"),
+		"r_picmip_water", getDvar("py_r_picmip_water"),
+		"cg_brass", getDvar("py_cg_brass"),
+		"com_maxFPS", getDvar("py_com_maxFPS")
+		);
 }
 
 pyOnSpawnPlayer()
@@ -28,21 +45,6 @@ pyOnSpawnPlayer()
         replaced_welcome_text = string_replace( welcome_text, "<name>", self.name );
         self IprintLnBold( replaced_welcome_text );
     }
-}
-
-pySetClientVars()
-{
-	self setClientDvars(
-		"fx_enable", getDvar("py_fx_enable"),
-		"r_fullbright", getDvar("py_r_fullbright"),
-		"player_sustainAmmo", getDvar("py_player_sustainAmmo"),
-		"r_fog", getDvar("py_r_fog"),
-		"r_drawDecals", getDvar("py_r_drawDecals"),
-		"r_drawSun", getDvar("py_r_drawSun"),
-		"r_picmip_water", getDvar("py_r_picmip_water"),
-		"cg_brass", getDvar("py_cg_brass"),
-		"com_maxFPS", getDvar("py_com_maxFPS")
-		);
 }
 
 AntiCamp()

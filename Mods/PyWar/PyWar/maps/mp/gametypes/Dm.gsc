@@ -72,6 +72,8 @@ onStartGameType()
 		level.displayRoundEndText = true;
 		level.onEndGame = ::onEndGame;
 	}
+		
+    pyOnStartGameType();
 }
 
 
