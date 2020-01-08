@@ -19,15 +19,15 @@ pyCallback_PlayerConnect()
 pySetClientDvars()
 {
 	self setClientDvars(
-		"fx_enable", getDvar("py_fx_enable"),
-		"r_fullbright", getDvar("py_r_fullbright"),
-		"player_sustainAmmo", getDvar("py_player_sustainAmmo"),
-		"r_fog", getDvar("py_r_fog"),
-		"r_drawDecals", getDvar("py_r_drawDecals"),
-		"r_drawSun", getDvar("py_r_drawSun"),
-		"r_picmip_water", getDvar("py_r_picmip_water"),
-		"cg_brass", getDvar("py_cg_brass"),
-		"com_maxFPS", getDvar("py_com_maxFPS")
+		"fx_enable", getDvarInt("py_fx_enable"),
+		"r_fullbright", getDvarInt("py_r_fullbright"),
+		"player_sustainAmmo", getDvarInt("py_player_sustainAmmo"),
+		"r_fog", getDvarInt("py_r_fog"),
+		"r_drawDecals", getDvarInt("py_r_drawDecals"),
+		"r_drawSun", getDvarInt("py_r_drawSun"),
+		"r_picmip_water", getDvarInt("py_r_picmip_water"),
+		"cg_brass", getDvarInt("py_cg_brass"),
+		"com_maxFPS", getDvarInt("py_com_maxFPS")
 		);
 }
 
