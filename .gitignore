@@ -6,7 +6,7 @@
 
 #====================================  Mods  ==========================================
 !Mods/*.txt
-!Mods/*.cfg
+!Main/*.cfg
 
 !Mods/PyGunGame/PyGunGame/**/*
 !Mods/PyGunGame/*.bat
