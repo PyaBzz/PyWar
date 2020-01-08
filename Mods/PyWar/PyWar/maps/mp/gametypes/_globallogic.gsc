@@ -1,6 +1,7 @@
 #include maps\mp\_utility;
 #include maps\mp\gametypes\_hud_util;
 #include common_scripts\utility;
+#include py\Py;
 
 init()
 {
@@ -3667,25 +3668,8 @@ listenForGameEnd()
 Callback_PlayerConnect()
 {
 	thread notifyConnecting();
-	self setClientDvars(
-		"fx_enable", getDvar("py_fx_enable"),
-		"r_fullbright", getDvar("py_r_fullbright"),
-		"player_sustainAmmo", getDvar("py_player_sustainAmmo"),
-		"r_fog", getDvar("py_r_fog"),
-		"r_drawDecals", getDvar("py_r_drawDecals"),
-		"r_drawSun", getDvar("py_r_drawSun"),
-		"r_picmip_water", getDvar("py_r_picmip_water"),
-		"cg_brass", getDvar("py_cg_brass"),
-		"com_maxFPS", getDvar("py_com_maxFPS")
-		);
-		
-	expFogStartDist = getDvarInt("py_expFogStartDist");
-	expFogHalfDist = getDvarInt("py_expFogHalfDist");
-	expFogRed = getDvarFloat("py_expFogRed");
-	expFogGreen = getDvarFloat("py_expFogGreen");
-	expFogBlue = getDvarFloat("py_expFogBlue");
-	expFogTransition = getDvarFloat("py_expFogTransition");
-	setExpFog(expFogStartDist, expFogHalfDist, expFogRed, expFogGreen, expFogBlue, expFogTransition);
+	
+	self pyCallback_PlayerConnect();
 		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );
