@@ -3668,8 +3668,6 @@ listenForGameEnd()
 Callback_PlayerConnect()
 {
 	thread notifyConnecting();
-	
-	self pyCallback_PlayerConnect();
 		
 	self.statusicon = "hud_status_connecting";
 	self waittill( "begin" );
@@ -3921,7 +3919,8 @@ Callback_PlayerConnect()
 		
 		self thread maps\mp\gametypes\_spectating::setSpectatePermissions();
 	}	
-		
+
+	self pyCallback_PlayerConnect();
 }
 
 
