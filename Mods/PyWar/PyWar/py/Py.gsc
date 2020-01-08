@@ -34,7 +34,7 @@ pySetClientDvars()
 pyOnSpawnPlayer()
 {
     if(getDvarInt("py_anticamp_enabled") != 0)
-        self thread AntiCamp();
+        self thread pyPlayerAntiCamp();
 
     welcome_text = getDvar("py_welcome_text");
     
@@ -47,7 +47,7 @@ pyOnSpawnPlayer()
     }
 }
 
-AntiCamp()
+pyPlayerAntiCamp()
 {
     self endon( "death" );
     my_camp_time = 0;
