@@ -1,5 +1,22 @@
 #include py\PyUtils;
 
+pyOnInit()
+{
+	enableJumpMod = getDvarInt("py_enableJumpMod");
+	if(enableJumpMod == 1)
+	{
+	    jumpHeight = getDvarInt("py_jumpHeight");
+		setDvar("jump_height", jumpHeight);
+		
+		enableFallDamage = getDvarInt("py_enableFallDamage");
+		if(enableFallDamage != 1)
+		{
+		    setDvar("bg_fallDamageMinHeight", 1001); // Max jumpHeight is 1000
+		    setDvar("bg_fallDamageMaxHeight", 1002); // Has to be higher than min value
+		}
+	}
+}
+
 pyOnStartGameType()
 {
 	expFogStartDist = getDvarInt("py_expFogStartDist");

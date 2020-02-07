@@ -97,6 +97,8 @@ init()
 	
 	if ( !isDefined( game["tiebreaker"] ) )
 		game["tiebreaker"] = false;
+		
+	pyOnInit();
 }
 
 registerDvars()
