@@ -1,6 +1,10 @@
-#================  We ignore everything except files of interest  =====================
-**/*.*
+#==================  Ignore everything except files of interest  ======================
+*
 
+# not folders
+!*/
+
+# not these
 !.gitignore
 !web.config
 
@@ -20,19 +24,13 @@
 !Mods/PyWar/05-Sniper.cfg
 !Mods/PyWar/mod.ff
 
-
 #===================================  Players  ========================================
 Players/**/mpdata
-!Players/Profiles/active.txt
+!Players/Profiles/mpdata_backup
+!Players/Profiles/**/config_mp.cfg
 
-!Players/Profiles/PyOnline/config_mp.cfg
-
-!Players/Profiles/PyPrivate/config_mp.cfg
-
-
-#==================================  Registry  ========================================
+#===============================  Windows Scripts  ====================================
 !Windows/*
-
 
 #=================================  ShortCuts  ========================================
 !*.bat
