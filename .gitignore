@@ -12,17 +12,10 @@
 !Mods/*.txt
 !Main/*.cfg
 
-!Mods/PyGunGame/PyGunGame/**/*
-!Mods/PyGunGame/*.bat
-!Mods/PyGunGame/03-PyGunGame.cfg
-!Mods/PyGunGame/mod.ff
-
-!Mods/PyWar/PyWar/**/*
-!Mods/PyWar/*.bat
-!Mods/PyWar/03-PyWar.cfg
-!Mods/PyWar/04-Pistol.cfg
-!Mods/PyWar/05-Sniper.cfg
-!Mods/PyWar/mod.ff
+!Mods/Baz*/Baz*/**/*
+!Mods/Baz*/*.bat
+!Mods/Baz*/*.cfg
+!Mods/Baz*/mod.ff
 
 #===================================  Players  ========================================
 Players/**/mpdata

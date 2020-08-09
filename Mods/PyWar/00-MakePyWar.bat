@@ -1,9 +1,0 @@
-del 01-PyWar.iwd
-
-powershell compress-archive .\PyWar\* .\PyWar.zip
-
-ren PyWar.zip 01-PyWar.iwd
-
-start "RunIt" /D "..\..\" "03-Run-PyWar.bat"
-
-REM pause
