@@ -2,13 +2,13 @@
 
 bazOnInit()
 {
-	enableJumpMod = getDvarInt("baz_enableJumpMod");
+	enableJumpMod = getDvarInt("baz_jumpModEnable");
 	if(enableJumpMod == 1)
 	{
-	    jumpHeight = getDvarInt("baz_jumpHeight");
+	    jumpHeight = getDvarInt("baz_jumpModHeight");
 		setDvar("jump_height", jumpHeight);
 		
-		enableFallDamage = getDvarInt("baz_enableFallDamage");
+		enableFallDamage = getDvarInt("baz_jumpModEnableFallDamage");
 		if(enableFallDamage != 1)
 		{
 		    setDvar("bg_fallDamageMinHeight", 9998); // Max jumpHeight is 1000
