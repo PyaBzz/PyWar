@@ -19,7 +19,7 @@
 
 #===================================  Players  ========================================
 Players/**/mpdata
-!Players/Profiles/mpdata_backup
+!Players/Profiles/mpdata_LvL55
 !Players/Profiles/**/config_mp.cfg
 
 #===============================  Windows Scripts  ====================================
