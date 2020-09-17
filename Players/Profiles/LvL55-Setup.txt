@@ -1,0 +1,11 @@
+ATTENTION!!! Different versions of the game encrypt the file differently.
+Not all mpdata files are the same. Only the universal LvL55 file works here!
+It is included next to this file.
+
+- Exit game.
+- Remove all mod folders inside your player profile folder.
+- Everywhere in Windows registry search for "codkey" and set its value to that of LvL55.
+- In your profile folder replace the mpdata file with that of LvL55.
+- Run the game and check your rank. You should now be LvL55.
+- Now in game options enter your original cod key.
+- Play a game online for the changes to persist.

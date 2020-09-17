@@ -18,7 +18,7 @@
 !Mods/Baz*/mod.ff
 
 #===================================  Players  ========================================
-Players/**/mpdata
+!Players/Profiles/LvL55-Setup.txt
 !Players/Profiles/mpdata_LvL55
 !Players/Profiles/**/config_mp.cfg
 
